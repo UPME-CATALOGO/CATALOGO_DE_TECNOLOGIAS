@@ -270,3 +270,4 @@ Example: https://www.upme.gov.co/catalogotecnologico/api/techs_year/?technology=
 |       15 |        8 | Inversión total                                                    | Datos específicos de la tecnología           | InvTotal                 |
 |        7 |        8 | Tamaño del reservorio                                              | Datos específicos de la tecnología           | TamanoReservorio         |
 |       14 |        8 | Tiempo de carga/descarga                                           | Datos específicos de la tecnología           | TiempoCargaDescarga      |
+</div>
