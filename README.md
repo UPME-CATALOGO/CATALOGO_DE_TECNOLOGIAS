@@ -1,5 +1,5 @@
 <p align="center"> 
-<img src="https://www.icde.gov.co/sites/default/files/ides/logo%20upme.png">
+<img src="https://raw.githubusercontent.com/UPME-CATALOGO/CATALOGO_DE_TECNOLOGIAS/main/logo.png" alt="Logo_UPME">
 </p>
 
 ## Índice
