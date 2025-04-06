@@ -2,7 +2,6 @@
 
 <p align="center"> 
 <img src="https://raw.githubusercontent.com/UPME-CATALOGO/CATALOGO_DE_TECNOLOGIAS/main/UpmeLogo_Final.png" alt="Logo_UPME" width="150">
-<img src="https://via.placeholder.com/800x200/000000/ffffff?text=Mi+Proyecto+Fondo+Negro" alt="Banner con fondo negro" />  
 </p>
 
 
