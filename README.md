@@ -1,22 +1,18 @@
 <table width="100%">
   <tr>
-    <!-- Logo Izquierdo -->
     <td align="left" width="25%">
       <img src="https://raw.githubusercontent.com/UPME-CATALOGO/CATALOGO_DE_TECNOLOGIAS/main/logo_UPME_2025.jpg" width="150">
     </td>
-
-    <!-- Celda Central -->
     <td align="center" width="50%">
-      <!-- Aquí puedes poner un título o dejarlo vacío -->
-      <strong style="font-size: 20px;">Catálogo de Tecnologías</strong>
+      <!-- Puedes poner aquí lo que quieras -->
+      <strong style="font-size: 18px;">Catálogo de Tecnologías 2025</strong>
     </td>
-
-    <!-- Logo Derecho -->
     <td align="right" width="25%">
       <img src="https://raw.githubusercontent.com/UPME-CATALOGO/CATALOGO_DE_TECNOLOGIAS/main/Logos_CIO.png" width="150">
     </td>
   </tr>
 </table>
+
 
 
 
