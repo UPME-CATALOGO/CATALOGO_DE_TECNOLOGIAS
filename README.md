@@ -1,13 +1,12 @@
 <table width="100%">
   <tr>
-    <td align="left" width="25%">
+    <td align="left" width="20%">
       <img src="https://raw.githubusercontent.com/UPME-CATALOGO/CATALOGO_DE_TECNOLOGIAS/main/logo_UPME_2025.jpg" width="150">
     </td>
-    <td align="center" width="50%">
-      <!-- Puedes poner aquí lo que quieras -->
-      <strong style="font-size: 70px;">Catálogo de Tecnologías 2025</strong>
+    <td align="center" width="60%">
+      <span style="font-size: 32px; font-weight: bold;">Catálogo de Tecnologías 2025</span>
     </td>
-    <td align="right" width="25%">
+    <td align="right" width="20%">
       <img src="https://raw.githubusercontent.com/UPME-CATALOGO/CATALOGO_DE_TECNOLOGIAS/main/Logos_CIO.png" width="150">
     </td>
   </tr>
