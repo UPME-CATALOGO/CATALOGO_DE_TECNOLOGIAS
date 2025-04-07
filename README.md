@@ -1,7 +1,22 @@
-<div style="display: flex; justify-content: space-between; align-items: center; width: 100%; gap: 100px;">
-  <img src="https://raw.githubusercontent.com/UPME-CATALOGO/CATALOGO_DE_TECNOLOGIAS/main/logo_UPME_2025.jpg" alt="Logo UPME" width="150">
-  <img src="https://raw.githubusercontent.com/UPME-CATALOGO/CATALOGO_DE_TECNOLOGIAS/main/Logos_CIO.png" alt="Logo CIO" width="150">
-</div>
+<table width="100%" style="border-collapse: collapse;">
+  <tr>
+    <!-- Logo Izquierdo -->
+    <td align="left" style="width: 25%;">
+      <img src="https://raw.githubusercontent.com/UPME-CATALOGO/CATALOGO_DE_TECNOLOGIAS/main/logo_UPME_2025.jpg" alt="Logo UPME" width="150">
+    </td>
+
+    <!-- Celda Central Expandible -->
+    <td align="center" style="width: 50%;">
+      <!-- Puedes poner aquí cualquier contenido, como un título -->
+      <!-- <h2 style="margin: 0;">Catálogo de Tecnologías</h2> -->
+    </td>
+
+    <!-- Logo Derecho -->
+    <td align="right" style="width: 25%;">
+      <img src="https://raw.githubusercontent.com/UPME-CATALOGO/CATALOGO_DE_TECNOLOGIAS/main/Logos_CIO.png" alt="Logo CIO" width="150">
+    </td>
+  </tr>
+</table>
 
 
 
