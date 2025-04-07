@@ -1,7 +1,13 @@
-<div style="background-color:#1e1e1e; color:#ffffff; padding:20px; border-radius:10px;">
-<p align="center"> 
-<img src="https://raw.githubusercontent.com/UPME-CATALOGO/CATALOGO_DE_TECNOLOGIAS/main/logo_UPME_2025.jpg" alt="Logo_UPME" width="150">
-</p>
+<table>
+  <tr>
+    <td align="left">
+      <img src="https://raw.githubusercontent.com/UPME-CATALOGO/CATALOGO_DE_TECNOLOGIAS/main/logo_UPME_2025.jpg" alt="Logo UPME Izquierda" width="150">
+    </td>
+    <td align="right">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Logo_UNAL.png/320px-Logo_UNAL.png" alt="Logo Derecha" width="150">
+    </td>
+  </tr>
+</table>
 
 
 ## Índice
