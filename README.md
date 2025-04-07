@@ -4,7 +4,7 @@
       <img src="https://raw.githubusercontent.com/UPME-CATALOGO/CATALOGO_DE_TECNOLOGIAS/main/logo_UPME_2025.jpg" width="150">
     </td>
     <td align="center" width="60%">
-      <strong style="font-size: 28px;">Catálogo de Tecnologías 2025</strong>
+      <strong style="font-size: 50px;">Catálogo de Tecnologías 2025</strong>
     </td>
     <td align="right" width="20%">
       <img src="https://raw.githubusercontent.com/UPME-CATALOGO/CATALOGO_DE_TECNOLOGIAS/main/Logos_CIO.png" width="150">
