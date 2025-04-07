@@ -1,17 +1,7 @@
-<table width="100%" style="border-collapse: collapse;">
-  <tr>
-    <td align="left" style="padding: 0; margin: 0;">
-      <img src="https://raw.githubusercontent.com/UPME-CATALOGO/CATALOGO_DE_TECNOLOGIAS/main/logo_UPME_2025.jpg" alt="Logo UPME Izquierda" width="150">
-    </td>
-    
-    <!-- Celda vacía para espacio -->
-    <td style="width: 50px;"></td>
-    
-    <td align="right" style="padding: 0; margin: 0;">
-      <img src="https://raw.githubusercontent.com/UPME-CATALOGO/CATALOGO_DE_TECNOLOGIAS/main/Logos_CIO.png" alt="Logo CIO Derecha" width="150">
-    </td>
-  </tr>
-</table>
+<div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+  <img src="https://raw.githubusercontent.com/UPME-CATALOGO/CATALOGO_DE_TECNOLOGIAS/main/logo_UPME_2025.jpg" alt="Logo UPME" width="150">
+  <img src="https://raw.githubusercontent.com/UPME-CATALOGO/CATALOGO_DE_TECNOLOGIAS/main/Logos_CIO.png" alt="Logo CIO" width="150">
+</div>
 
 
 ## Índice
