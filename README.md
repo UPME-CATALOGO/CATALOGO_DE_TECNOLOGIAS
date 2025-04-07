@@ -58,7 +58,7 @@ Las herramientas están disponibles en los siguientes lenguajes:
 Para instalar la librería, ejecuta el siguiente comando:
 
 ```console
-pip install pytccol --index-url https://__token__:<your_personal_token>@gitlab.com/api/v4/projects/68535300/packages/pypi/simple
+pip install --no-cache-dir pytccol --index-url https://__token__:glpat-qiAp6PiiqYUUPUwhc4RV@gitlab.com/api/v4/projects/68535300/packages/pypi/simple
 ```
 
 <a id='objetosTechsCatalog'></a>
