@@ -5,7 +5,7 @@
     </td>
     <td></td> <!-- celda vacía al centro -->
     <td align="right">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Logo_UNAL.png/320px-Logos_CIO.png" alt="Logo Derecha" width="150">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Logo_UNAL.png/Logos_CIO.png" alt="Logo Derecha" width="150">
     </td>
   </tr>
 </table>
