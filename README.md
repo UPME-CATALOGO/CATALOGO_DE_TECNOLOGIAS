@@ -58,24 +58,11 @@ Las herramientas están disponibles en los siguientes lenguajes:
 Para instalar la librería, ejecuta el siguiente comando:
 
 ```console
-pip install --no-cache-dir pytccol --index-url https://__token__:glpat-qiAp6PiiqYUUPUwhc4RV@gitlab.com/api/v4/projects/68535300/packages/pypi/simple
+pip install pytccol --index-url https://__token__:<your_personal_token>@gitlab.com/api/v4/projects/68535300/packages/pypi/simple
 ```
 
 <a id='objetosTechsCatalog'></a>
 ## Objetos TechsCatalog
-
-**Importación en proyecto**
-```python
-from pytccol import TechsCatalog
-```
-
-<a id='catalogosTecnologias'></a>
-### Catálogos de Tecnologías
-
-> [!IMPORTANT]
-> El objeto de los catálogos funciona de manera diferente al objeto de lectura de conjuntos de datos.
-
-Puedes acceder a la información utilizando el objeto asociado a los catálogos. Instanciar la clase guarda toda la información en atributos que pueden leerse utilizando las funciones `.get_atributo`.
 
 ### Conjuntos de datos disponibles
 
@@ -97,14 +84,13 @@ print("Variables: ", variables)
 print("Información de tecnologías: ", techs_data)
 ```
 
-<a id='catalogovariables'></a>
-### ¿Cuál conjunto contiene una variable?
+### Variables - Parametros 
 
 ```python
 # Importación
 from pytccol import TechsCatalog
 
-# Crear una instancia de catálogo con las variables
+# Crear una instancia de catálogo con los Parámetros
 techs_variables = TechsCatalog()
 
 # Extraer información sobre las variables
@@ -120,7 +106,7 @@ print(data)
 ### Ejemplo de uso
 
 > [!NOTE]
-> La ejecución del siguiente código puede tardar entre 1 y 2 minutos en completarse, dependiendo del conjunto de datos consultado. Se recomienda usar un cuaderno Jupyter para facilitar la ejecución.
+> La ejecución del siguiente código puede tardar aproximadamente 30 segundos en completarse, dependiendo del conjunto de datos consultado. Se recomienda usar un cuaderno Jupyter para facilitar la ejecución.
 
 El siguiente código consulta el conjunto de datos asociado con tecnologías de energía y realiza una consulta para fechas arbitrarias sin usar filtros.
 
@@ -143,10 +129,7 @@ print(techs_data_filtered)
 
 # Endpoints API
 
-También puedes consultar los datos directamente a través de la API utilizando los enlaces disponibles. 
-
-> [!WARNING]
-> Ambas API tienen **restricciones** para evitar la congestión del servicio. Asegúrate de revisar las limitaciones de cada tipo de consulta.
+También puedes consultar los datos directamente a través de la API utilizando los enlaces disponibles. La versión actual se encuentra en desarollo, así que se pueden esperar bugs durante la ejecución.
 
 ```
 https://www.upme.gov.co/catalogotecnologico/api/technologies/
@@ -287,4 +270,3 @@ Example: https://www.upme.gov.co/catalogotecnologico/api/techs_year/?technology=
 |       15 |        8 | Inversión total                                                    | Datos específicos de la tecnología           | InvTotal                 |
 |        7 |        8 | Tamaño del reservorio                                              | Datos específicos de la tecnología           | TamanoReservorio         |
 |       14 |        8 | Tiempo de carga/descarga                                           | Datos específicos de la tecnología           | TiempoCargaDescarga      |
-</div>
