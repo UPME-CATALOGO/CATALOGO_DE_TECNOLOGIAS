@@ -1,9 +1,9 @@
-<table width="100%" cellspacing="0" cellpadding="0">
+<table width="100%" style="border-collapse: collapse;">
   <tr>
-    <td align="left" width="50%">
+    <td align="left" style="padding: 0; margin: 0;">
       <img src="https://raw.githubusercontent.com/UPME-CATALOGO/CATALOGO_DE_TECNOLOGIAS/main/logo_UPME_2025.jpg" alt="Logo UPME Izquierda" width="150">
     </td>
-    <td align="right" width="50%">
+    <td align="right" style="padding: 0; margin: 0;">
       <img src="https://raw.githubusercontent.com/UPME-CATALOGO/CATALOGO_DE_TECNOLOGIAS/main/Logos_CIO.png" alt="Logo CIO Derecha" width="150">
     </td>
   </tr>
