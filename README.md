@@ -1,11 +1,10 @@
-<table width="100%">
+<table width="100%" cellspacing="0" cellpadding="0">
   <tr>
-    <td align="left">
+    <td align="left" width="50%">
       <img src="https://raw.githubusercontent.com/UPME-CATALOGO/CATALOGO_DE_TECNOLOGIAS/main/logo_UPME_2025.jpg" alt="Logo UPME Izquierda" width="150">
     </td>
-    <td></td> <!-- celda vacía al centro -->
-    <td align="right">
-      <img src="https://raw.githubusercontent.com/UPME-CATALOGO/CATALOGO_DE_TECNOLOGIAS/main/Logos_CIO.png" alt="Logo UPME Izquierda" width="150">
+    <td align="right" width="50%">
+      <img src="https://raw.githubusercontent.com/UPME-CATALOGO/CATALOGO_DE_TECNOLOGIAS/main/Logos_CIO.png" alt="Logo CIO Derecha" width="150">
     </td>
   </tr>
 </table>
