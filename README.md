@@ -1,4 +1,4 @@
-<div style="display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 0 50px;">
+<div style="display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 0 1000px;">
   <img src="https://raw.githubusercontent.com/UPME-CATALOGO/CATALOGO_DE_TECNOLOGIAS/main/logo_UPME_2025.jpg" alt="Logo UPME" width="150">
   <img src="https://raw.githubusercontent.com/UPME-CATALOGO/CATALOGO_DE_TECNOLOGIAS/main/Logos_CIO.png" alt="Logo CIO" width="150">
 </div>
