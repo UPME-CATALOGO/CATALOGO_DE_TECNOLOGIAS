@@ -5,7 +5,7 @@
     </td>
     <td align="center" width="50%">
       <!-- Puedes poner aquí lo que quieras -->
-      <strong style="font-size: 18px;">Catálogo de Tecnologías 2025</strong>
+      <strong style="font-size: 100;">Catálogo de Tecnologías 2025</strong>
     </td>
     <td align="right" width="25%">
       <img src="https://raw.githubusercontent.com/UPME-CATALOGO/CATALOGO_DE_TECNOLOGIAS/main/Logos_CIO.png" width="150">
