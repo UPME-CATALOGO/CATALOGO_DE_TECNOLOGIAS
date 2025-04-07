@@ -3,6 +3,10 @@
     <td align="left" style="padding: 0; margin: 0;">
       <img src="https://raw.githubusercontent.com/UPME-CATALOGO/CATALOGO_DE_TECNOLOGIAS/main/logo_UPME_2025.jpg" alt="Logo UPME Izquierda" width="150">
     </td>
+    
+    <!-- Celda vacía para espacio -->
+    <td style="width: 50px;"></td>
+    
     <td align="right" style="padding: 0; margin: 0;">
       <img src="https://raw.githubusercontent.com/UPME-CATALOGO/CATALOGO_DE_TECNOLOGIAS/main/Logos_CIO.png" alt="Logo CIO Derecha" width="150">
     </td>
