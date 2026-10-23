@@ -23,14 +23,16 @@
 
 ## Índice
 - [Conceptos generales](#conceptos-generales)
-- [Librería Python](#librería-python)
+- [Pytccol: Paquete Python](#pytccol-paquete-python)
   - [Instalación](#instalación)
   - [Objetos TechsCatalog](#objetos-techscatalog)
-    - [Catálogos de Tecnologías](#catálogos-de-tecnologías)
     - [Conjuntos de datos disponibles](#conjuntos-de-datos-disponibles)
-    - [¿Cuál conjunto contiene una variable?](#cuál-conjunto-contiene-una-variable)
+    - [Variables y parámetros](#variables-y-parámetros)
     - [Ejemplo de uso](#ejemplo-de-uso)
 - [Endpoints API](#endpoints-api)
+  - [Ejemplos de consultas API](#ejemplos-de-consultas-api)
+  - [Diccionario de tecnologías](#diccionario-de-tecnologías)
+  - [Diccionario de variables](#diccionario-de-variables)
 
 <a id='conceptosGenerales'></a>
 # Conceptos generales
@@ -45,7 +47,7 @@ Las herramientas están disponibles en los siguientes lenguajes:
 
 | Lenguaje | Nombre | Tipo | Instalación | Habilidad requerida |
 |----------|--------|------|-------------|---------------------|
-| Python   | [pytccol](https://pypi.org/project/pytccol/) | Librería | <code> $ pip install pytccol </code> | Low Code |
+| Python   | pytccol | Librería | [Consultar disponibilidad](#instalación) | Low Code |
 
 # Pytccol: Paquete Python
 
@@ -55,11 +57,9 @@ Las herramientas están disponibles en los siguientes lenguajes:
 <a id='instalacion'></a>
 ## Instalación
 
-Para instalar la librería, ejecuta el siguiente comando:
+La fuente de instalación de `pytccol` está pendiente de confirmación. Consulta a los mantenedores del proyecto para obtener el índice de paquetes y las instrucciones de instalación vigentes. Si el índice requiere autenticación, configura las credenciales localmente sin incluirlas en archivos del repositorio.
 
-```console
-pip install --no-cache-dir pytccol --index-url https://__token__:glpat-qiAp6PiiqYUUPUwhc4RV@gitlab.com/api/v4/projects/68535300/packages/pypi/simple
-```
+Mientras se confirma la instalación del paquete, puedes consultar los datos directamente mediante los [endpoints de la API](#endpoints-api).
 
 <a id='objetosTechsCatalog'></a>
 ## Objetos TechsCatalog
@@ -74,9 +74,9 @@ from pytccol import TechsCatalog
 techs_catalog = TechsCatalog()
 
 # Obtener información de los conjuntos de datos
-techs = techs_catalogue.get_data("technologies")
-variables = techs_catalogue.get_data("variables")
-techs_data = techs_catalogue.get_data("techs_year")
+techs = techs_catalog.get_data("technologies")
+variables = techs_catalog.get_data("variables")
+techs_data = techs_catalog.get_data("techs_year")
 
 # Obtener información de los conjuntos de datos
 print("Tecnologías: ", techs)
@@ -84,22 +84,17 @@ print("Variables: ", variables)
 print("Información de tecnologías: ", techs_data)
 ```
 
-### Variables - Parametros 
+### Variables y parámetros
 
 ```python
 # Importación
 from pytccol import TechsCatalog
 
-# Crear una instancia de catálogo con los Parámetros
-techs_variables = TechsCatalog()
-
-# Extraer información sobre las variables
-print("Nombre: ", techs_variables.get_name())
-print("Metadata: ", techs_variables.get_metadata())
-print("Columnas: ", techs_variables.get_columns())
+# Crear una instancia de catálogo
+techs_catalog = TechsCatalog()
 
 # Dataframe con información de las variables
-data = techs_variables.get_data()
+data = techs_catalog.get_data("variables")
 print(data)
 ```
 
@@ -108,20 +103,23 @@ print(data)
 > [!NOTE]
 > La ejecución del siguiente código puede tardar aproximadamente 30 segundos en completarse, dependiendo del conjunto de datos consultado. Se recomienda usar un cuaderno Jupyter para facilitar la ejecución.
 
-El siguiente código consulta el conjunto de datos asociado con tecnologías de energía y realiza una consulta para fechas arbitrarias sin usar filtros.
+El siguiente código consulta el conjunto de datos `techs_year` y aplica filtros para la tecnología fotovoltaica residencial y la variable de capacidad de generación de toda la central.
 
 ```python
 # Importación
 from pytccol import TechsCatalog
 
-# Buscar el conjunto de datos relacionado con "Fotovoltaicas"
-techs_data_filtered = techs_catalogue.get_data(
-                        "techs_year", 
-                        filters={
-                            "technology": "InstFotovResidencial",
-                            "variable": "CapGenCentral"
-                        }
-                    )# Crear una instancia para leer el conjunto de datos
+# Crear una instancia de catálogo
+techs_catalog = TechsCatalog()
+
+# Consultar los datos de la tecnología y la variable seleccionadas
+techs_data_filtered = techs_catalog.get_data(
+    "techs_year",
+    filters={
+        "technology": "InstFotovResidencial",
+        "variable": "CapGenCentral",
+    },
+)
 
 # Recuperar datos
 print(techs_data_filtered)
@@ -129,35 +127,47 @@ print(techs_data_filtered)
 
 # Endpoints API
 
-También puedes consultar los datos directamente a través de la API utilizando los enlaces disponibles. La versión actual se encuentra en desarollo, así que se pueden esperar bugs durante la ejecución.
+También puedes consultar los datos directamente a través de la API utilizando los enlaces disponibles. La versión actual se encuentra en desarrollo, así que pueden presentarse errores durante las consultas.
 
-```
-https://www.upme.gov.co/catalogotecnologico/api/technologies/
-https://www.upme.gov.co/catalogotecnologico/api/units/
-https://www.upme.gov.co/catalogotecnologico/api/categories/
-https://www.upme.gov.co/catalogotecnologico/api/variables/
+URL base: `https://api.upme.gov.co/catalogo_tecnologias/api/`
 
+| Recurso | Endpoint |
+|---------|----------|
+| Tecnologías | [technologies/](https://api.upme.gov.co/catalogo_tecnologias/api/technologies/) |
+| Unidades | [units/](https://api.upme.gov.co/catalogo_tecnologias/api/units/) |
+| Categorías | [categories/](https://api.upme.gov.co/catalogo_tecnologias/api/categories/) |
+| Variables | [variables/](https://api.upme.gov.co/catalogo_tecnologias/api/variables/) |
+| Datos de tecnologías por año | [techs_year/](https://api.upme.gov.co/catalogo_tecnologias/api/techs_year/) |
 
-```
-## Examples
-Data for a specific technology:
-```
-https://www.upme.gov.co/catalogotecnologico/api/techs_year/?technology=<tech_id>
-Example: https://www.upme.gov.co/catalogotecnologico/api/techs_year/?technology=2
-```
-Data for a specific variable:
-```
-https://www.upme.gov.co/catalogotecnologico/api/techs_year/?variable=<variable_id>
-Example: https://www.upme.gov.co/catalogotecnologico/api/techs_year/?variable=10
-```
+## Ejemplos de consultas API
 
-Data for a specific technology and variable:
-```
-https://www.upme.gov.co/catalogotecnologico/api/techs_year/?technology=<tech_id>&variable=<variable_id>
-Example: https://www.upme.gov.co/catalogotecnologico/api/techs_year/?technology=2&variable=10
+Consulta `technologies/` y `variables/` para obtener los identificadores vigentes y sustituir `<tech_id>` y `<variable_id>` en las siguientes consultas. Usa el campo `id` de cada respuesta: para las variables, el campo `id_var` corresponde a la numeración del catálogo y puede repetirse entre categorías.
+
+Datos de una tecnología específica:
+
+```text
+https://api.upme.gov.co/catalogo_tecnologias/api/techs_year/?technology=<tech_id>
 ```
 
-## Technologies Dictionary
+[Ejemplo: PV industrial (technology=2)](https://api.upme.gov.co/catalogo_tecnologias/api/techs_year/?technology=2)
+
+Datos de una variable específica:
+
+```text
+https://api.upme.gov.co/catalogo_tecnologias/api/techs_year/?variable=<variable_id>
+```
+
+[Ejemplo: carga mínima (variable=10)](https://api.upme.gov.co/catalogo_tecnologias/api/techs_year/?variable=10)
+
+Datos de una tecnología y una variable específicas:
+
+```text
+https://api.upme.gov.co/catalogo_tecnologias/api/techs_year/?technology=<tech_id>&variable=<variable_id>
+```
+
+[Ejemplo: carga mínima de PV industrial (technology=2 y variable=10)](https://api.upme.gov.co/catalogo_tecnologias/api/techs_year/?technology=2&variable=10)
+
+## Diccionario de tecnologías
 |   ID_TEC | TECNOLOGIA                                                                 | KEY                    | TECH_SHORT_NAME                     |
 |---------:|:---------------------------------------------------------------------------|:-----------------------|:------------------------------------|
 |        1 | Instalación fotovoltaica a escala residencial, techo - conectada a la red  | InstFotovResidencial   | PV residencial                      |
@@ -188,7 +198,10 @@ Example: https://www.upme.gov.co/catalogotecnologico/api/techs_year/?technology=
 |       26 | Almacenamiento en baterías de iones de litio – Pequeña escala              | AlmacBateLitioPeq      | Baterías litio pequeña escala       |
 |       27 | Almacenamiento hidráulico por bombeo – reservorios naturales               | AlmacHidraReservNatu   | Almacenamiento bombeo reservorios   | 
 
-## Variables Dictionary
+## Diccionario de variables
+
+La columna `ID_VAR` corresponde al campo `id_var` de la API y sus valores se repiten entre categorías. Para el parámetro `variable`, utiliza el campo `id` del endpoint [variables/](https://api.upme.gov.co/catalogo_tecnologias/api/variables/). Por ejemplo, `CargaMin` tiene `id_var=2` e `id=10`, por lo que se consulta con `variable=10`.
+
 |   ID_VAR |   ID_CAT | VARIABLE                                                           | CATEGORIA                                    | KEY                      |
 |---------:|---------:|:-------------------------------------------------------------------|:---------------------------------------------|:-------------------------|
 |        2 |        1 | Capacidad de generación de toda la central                         | Datos energéticos/técnicos                   | CapGenCentral            |
